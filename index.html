@@ -3,17 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>NaoyaHayashi'room</title>
+    <title>Naoya Hayashi's room</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>NaoyaHayashi'room</h1>
+        <h1>Naoya Hayashi's room</h1>
     </header>
-    <h2>こんにちわんわん</h2>
-    こんにちは
-    <a>あいうえお</a>
+    <main>
+        <h2>Hello, I am Naoya Hayashi !</h2>
+        こんにちは
+        <a>カーソルを当てると赤くなるよ</a><br><br>
+
+        <button id="show-button">クリックしてね</button>
+        <p id="message"></p>
+        <script>
+            const btn = document.getElementById('show-button');
+            const msg = document.getElementById('message');
+            btn.addEventListener('click', () => {
+                msg.textContent = 'ボタンが押されました。';
+            });
+        </script>
+    </main>
     <footer>
         <address>Copyright(C) NaoyaHayashi37, Allright Reserved.</address>
     </footer>
