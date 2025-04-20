@@ -29,6 +29,7 @@ header {
 
 footer {
     background: #222;
+    bottom: 0;
     color: #fff;
     font-size: 80%;
     letter-spacing: 5px;
